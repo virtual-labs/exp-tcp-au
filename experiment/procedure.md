@@ -2,12 +2,16 @@
 
 The client initiates a connection with server by sending a TCP SYN packet.
 
-The first SYN message contains a random number (Initial Synchronise Number), unique to each new connection.
+
+The first SYN message contains a random number (Initial Sequence Number), unique to each new connection.
+
 
 ### Step 1
 To begin, enter a random four digit number here that will be used as the ISN to initiate communication.
 
-The server responds with a SYN + ACK packet.
+
+The server responds with a SYN - ACK packet.
+
 
 SYN indicates the random sequence number that the server will be using.
 
