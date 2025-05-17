@@ -1,4 +1,3 @@
-
 ### Theory
 
 The Transmission Control Protocol (TCP) is a reliable, connection-oriented protocol that operates at the Transport Layer of the OSI (Open Systems Interconnection) model. TCP provides a reliable, ordered, and error-checked delivery of data between applications running on hosts.
@@ -37,4 +36,51 @@ When the data transmission is complete, TCP performs a four-way handshake to clo
 
 In summary, TCP provides reliable, ordered, and error-checked delivery of data between applications running on hosts by establishing a connection, dividing data into packets, numbering them sequentially, and performing various functions such as retransmission, flow control, and congestion control.
 
-![fig1](/experiment/images/fig1.jpg)
+![fig1](images/fig1.jpg)
+
+### TCP Communication Process – High-Level Diagram
+
+```
+Client                                   Server
+  |                                         |
+  | ----------- SYN --------------------->  |   <- Step 1: Client sends SYN to start connection
+  |                                         |
+  | <-------- SYN + ACK ------------------  |   <- Step 2: Server responds with SYN+ACK
+  |                                         |
+  | ----------- ACK --------------------->  |   <- Step 3: Client acknowledges => Connection Established
+  |                                         |
+  | ------- Data Segment 1 -------------->  |   <- Data Transfer Begins
+  | <------ Acknowledgement 1 ------------  |
+  | ------- Data Segment 2 -------------->  |
+  | <------ Acknowledgement 2 ------------  |
+  |         ... continues ...               |
+  |                                         |
+  | ---------- FIN ---------------------->  |   <- Step 4: Client initiates connection termination
+  | <--------- ACK -----------------------  |
+  | <---------- FIN ----------------------  |   <- Server responds with FIN
+  | ----------- ACK --------------------->  |   <- Client sends final ACK
+  |                                         |
+  Connection Closed                         Connection Closed
+```
+
+### Real-World Applications of TCP
+
+#### 1. Online Banking and E-commerce
+
+**Scenario:** Making transactions or payments on banking or shopping websites.
+
+**How TCP is used:**
+These services use HTTPS, which runs over TCP, to ensure all sensitive data (e.g., login details, card numbers) is sent securely and reliably.
+
+**Why TCP?**
+Any data corruption or loss could lead to failed transactions or security risks—TCP prevents this.
+
+#### 2. Messaging Applications
+
+**Scenario:** Chatting with someone over a desktop or browser-based messaging platform (e.g., WhatsApp Web, iMessage).
+
+**How TCP is used:**
+Many messaging platforms use TCP to deliver messages in real time while ensuring they're not lost or duplicated.
+
+**Why TCP?**
+Ensures reliable and ordered message delivery—no missing or jumbled messages.
