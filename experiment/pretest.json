@@ -30,7 +30,7 @@
         "a": "Connectionless",
         "b": "Acknowledgement is not processed",
         "c": " Data link layer protocol",
-        "d": "Reliable"
+        "d": "Connection-oriented"
       },
        
       "correctAnswer": "d",

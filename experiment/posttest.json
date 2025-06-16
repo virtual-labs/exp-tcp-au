@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Consider a TCP connection sending a file of 34569 bytes. The first byte is numbered 57899. What is the segment’s sequence number if all data is sent in only one segment? ",
+      "question": "Consider a TCP connection sending a file of 34569 bytes. The first byte is numbered 57899. What is the segment's sequence number if all data is sent in only one segment? ",
       "answers": {
         "a": "57900",
         "b": "57899",
@@ -22,7 +22,7 @@
         "d": "57991"
       },
       
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
