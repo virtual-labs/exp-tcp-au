@@ -1,4 +1,4 @@
-### Theory
+
 
 The **Transmission Control Protocol (TCP)** is a reliable, connection-oriented protocol that operates at the Transport Layer of the **OSI (Open Systems Interconnection)** model. **TCP** provides a reliable, ordered, and error-checked delivery of data between applications running on hosts.
 
