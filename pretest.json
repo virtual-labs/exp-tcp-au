@@ -1,0 +1,41 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Expansion of TCP",
+      "answers": {
+        "a": "Transistor Control Protocol",
+        "b": "Transmission Control Protocol",
+        "c": "Transport Control protocol",
+        "d": "Tele Communication Protocol"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In networking between computing systems, _______ connection(s) is(are) supported by the OSI model.  ",
+      "answers": {
+        "a": " Connection-oriented",
+        "b": "Connectionless",
+        "c": "Connectionless and Connection-oriented ",
+        "d": " None of the mentioned"
+      },
+       
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question":  "Which of the following is true with respect to TCP? ",
+      "answers": {
+        "a": "Connectionless",
+        "b": "Acknowledgement is not processed",
+        "c": " Data link layer protocol",
+        "d": "Connection-oriented"
+      },
+       
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+
+  ]
+}
