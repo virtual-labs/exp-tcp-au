@@ -1,4 +1,4 @@
-### Procedure
+
 
 The client initiates a connection with server by sending a **TCP** **SYN** packet.
 
